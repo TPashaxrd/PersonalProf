@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+  .header {
+    font-family: 'Roboto', serif;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .header nav a:hover {
+    color: #f9c74f;
+  }
+  .blog-list {
+    font-family: 'Ubuntu Mono', monospace;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  .blog-card {
+    transition: transform 1s;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+  }
+  .blog-card:hover {
+         transform: scale(1, 1.2);
+  }
+  .blog-card button {
+    transition: transform 0.7s;
+  }
+  .blog-card button:hover {
+    transform: scale(1, 1.5);
+  }
+  .blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .blog-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+  .blog-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 10px 10px;
+  }
+  
+  .blog-card button {
+    background-color: #f9c74f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-card button:hover {
+    background-color: #f8961e;
+  }
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
